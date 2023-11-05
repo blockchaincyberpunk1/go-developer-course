@@ -1,0 +1,41 @@
+Structs and Methods
+
+Objective: The objective of this assignment is to practice defining structs and associated methods in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students become familiar with the concept of structs and methods in Go.
+
+b. Key Concepts: Mention that this assignment will require students to define a struct called "Person" and create methods associated with this struct.
+
+Task Description:
+
+a. Struct Definition:
+
+Instruct students to create a Go program that defines a struct called "Person."
+The "Person" struct should have attributes like name (string), age (int), and address (string).
+Emphasize that this struct represents an individual person with these characteristics.
+b. Method Implementation:
+
+Ask students to implement methods associated with the "Person" struct. At a minimum, they should create a method that prints the person's details.
+The print method should display the person's name, age, and address in a formatted manner.
+c. Data Initialization:
+
+Instruct students to initialize instances of the "Person" struct with sample data. They should create multiple "Person" objects with different attributes.
+d. Method Invocation:
+
+Ask students to invoke the methods they defined on the "Person" instances to demonstrate the functionality.
+They should call the print method to display the details of each person.
+Testing:
+
+a. Method Testing: Encourage students to test their program thoroughly by creating and displaying details for multiple "Person" objects.
+
+b. Edge Cases: Suggest that students consider edge cases, such as missing information or non-standard inputs, and handle them gracefully.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) containing the "Person" struct definition and methods. They should also provide comments explaining their code and showcasing the usage of the methods.
+
+Grading Criteria: This assignment can be graded based on the correctness of the struct definition, the implementation of methods, and the proper demonstration of method invocation with sample "Person" instances.

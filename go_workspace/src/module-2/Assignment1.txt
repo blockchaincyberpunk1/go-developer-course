@@ -1,0 +1,27 @@
+Hello, Go!
+
+Objective: The objective of this assignment is to introduce students to the Go programming language and have them write a simple "Hello, World!" program.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to get students started with Go programming by writing a basic "Hello, World!" program.
+
+b. Key Concepts: Highlight that students will learn how to create a simple Go program, write code, and execute it.
+
+Task Description:
+
+a. Hello, World! Program: Instruct students to write a Go program that prints "Hello, World!" to the console.
+
+b. Code Structure: Emphasize that students should follow standard Go conventions, including importing packages and defining a main function.
+
+Sample Output:
+
+Provide an example of the expected output when the program is run.
+
+Code Submission:
+
+Instruct students to submit their Go "Hello, World!" program code.
+
+Grading Criteria: This assignment is typically graded based on completion. As long as students have successfully created and submitted a Go program that prints "Hello, World!" to the console, they meet the assignment's objectives.

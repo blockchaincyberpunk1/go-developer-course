@@ -1,0 +1,45 @@
+Forum Participation
+
+Objective: The objective of this assignment is to engage with the Go community through online forums. Students will actively participate in a selected Go community forum, ask questions, provide answers, and share insights related to Go programming. They should document their contributions and interactions.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on community engagement within the Go programming community. Students will participate in online forums, ask questions, provide answers, and contribute to discussions.
+
+b. Importance of Community: Emphasize the importance of community participation in learning and growing as a Go developer. Mention that active participation can help students gain insights, solve problems, and build professional connections.
+
+Task Description:
+
+a. Forum Selection: Instruct students to select a popular Go community forum, such as the official Go forum (https://forum.golangbridge.org/), Reddit's r/golang (https://www.reddit.com/r/golang/), or a specialized Go community that aligns with their interests.
+
+b. Active Participation: Encourage students to actively participate in the forum during the assignment period. They should engage in various ways, such as:
+
+Asking questions about Go programming concepts, best practices, or specific issues they encounter.
+Providing helpful and informative answers to questions posted by other community members.
+Sharing insights, experiences, or interesting Go-related content (e.g., articles, tutorials) with the community.
+c. Documentation: Require students to maintain a log or journal of their forum interactions. They should record the following:
+
+Date and time of each interaction.
+A brief description of the question, answer, or discussion topic.
+Links to the forum threads or posts they participated in.
+Any feedback or responses received from other community members.
+d. Frequency: Encourage students to make regular contributions throughout the assignment period. They should aim to participate in multiple discussions.
+
+Reflective Report:
+
+a. Report Preparation: Ask students to prepare a reflective report at the end of the assignment period. The report should summarize their forum participation experiences.
+
+b. Content of the Report:
+
+Summarize the topics they engaged with and the types of questions or discussions they were involved in.
+Reflect on any challenges faced and how they overcame them.
+Highlight any valuable insights gained or knowledge acquired through forum participation.
+Discuss any interactions with other community members, such as thanking someone for helpful answers or receiving feedback on their contributions.
+c. Personal Growth: Encourage students to reflect on how active participation in the Go community has contributed to their personal and professional growth as developers.
+
+Submission:
+
+Students should submit their reflective report along with their documented forum interactions.
+Grading Criteria: Grading can be based on the frequency and quality of forum participation, the completeness of the documentation, and the depth of reflection in the report. Students should demonstrate active engagement with the Go community and a willingness to learn from and contribute to the forum discussions.

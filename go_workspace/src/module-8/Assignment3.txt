@@ -1,0 +1,43 @@
+Contribute to an Open-Source Go Project
+
+Objective: The objective of this assignment is to contribute to the Go community by participating in open-source development. Students will find an open-source Go project that interests them and make a meaningful contribution. This can include submitting bug fixes, adding new features, or improving documentation. They should document their contributions and interactions with the project's maintainers.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on open-source contribution within the Go community. Students will actively participate in an open-source Go project of their choice, helping to improve the project, and collaborate with the community.
+
+b. Benefits of Open-Source Contribution: Highlight the benefits of contributing to open-source projects, such as gaining practical experience, expanding their Go programming skills, and building a professional network.
+
+Task Description:
+
+a. Selecting a Project:
+
+Instruct students to search for an open-source Go project that aligns with their interests and expertise. They can explore platforms like GitHub, GitLab, or Bitbucket to find projects.
+Encourage students to choose a project with an active community and maintainers who are receptive to contributions.
+b. Making Contributions:
+
+Once they have selected a project, students should review the project's documentation and issue tracker to identify areas where they can contribute. This can include bug fixes, feature enhancements, code refactoring, or documentation improvements.
+Ask students to make meaningful contributions to the project. This could involve submitting pull requests (PRs) with code changes, creating or updating documentation, fixing reported issues, or addressing feature requests.
+c. Documentation of Contributions:
+
+Require students to document their contributions and interactions with the project. They should keep records of the following:
+Details of the contribution (e.g., PR link, issue number).
+Any discussions or feedback received from project maintainers or other contributors.
+The impact of their contribution on the project.
+Reflective Report:
+
+a. Report Preparation: Ask students to prepare a reflective report based on their open-source contribution experience.
+
+b. Content of the Report:
+
+Summarize the open-source project they contributed to and the specific contributions made.
+Reflect on the challenges and successes encountered during the contribution process.
+Describe any interactions with project maintainers and the open-source community.
+Discuss what they learned from the experience, both technically and in terms of collaboration and open-source etiquette.
+Explain how their contributions have benefited the project or the broader Go community.
+Submission:
+
+Students should submit their reflective report along with any relevant documentation of their contributions (e.g., links to PRs, issue discussions).
+Grading Criteria: Grading can be based on the quality and impact of the contributions made, the thoroughness of documentation, the depth of reflection in the report, and the extent to which students engaged with the open-source project and community.

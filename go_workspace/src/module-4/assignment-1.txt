@@ -1,0 +1,88 @@
+Certainly! I'll walk you through the process of creating a Go program that includes multiple goroutines performing different tasks concurrently. In this example, we'll create a program that generates random numbers, calculates their sum, and prints the result.
+
+Here's the step-by-step code with detailed comments:
+
+go
+Copy code
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"sync"
+	"time"
+)
+
+func main() {
+	// Seed the random number generator with the current time
+	rand.Seed(time.Now().UnixNano())
+
+	// Create a channel to communicate between the generator and calculator goroutines
+	numbersCh := make(chan int)
+	
+	// Use a WaitGroup to wait for all goroutines to finish
+	var wg sync.WaitGroup
+	
+	// Launch the generator goroutine
+	wg.Add(1)
+	go generateNumbers(numbersCh, &wg)
+
+	// Launch the calculator goroutine
+	wg.Add(1)
+	go calculateSum(numbersCh, &wg)
+
+	// Wait for all goroutines to finish
+	wg.Wait()
+}
+
+// generateNumbers generates random numbers and sends them to the channel.
+func generateNumbers(ch chan<- int, wg *sync.WaitGroup) {
+	defer wg.Done() // Notify that this goroutine is done when it finishes
+
+	// Generate and send 5 random numbers to the channel
+	for i := 0; i < 5; i++ {
+		randomNum := rand.Intn(100)
+		fmt.Printf("Generated: %d\n", randomNum)
+		ch <- randomNum // Send the random number to the channel
+	}
+
+	// Close the channel to signal that no more numbers will be sent
+	close(ch)
+}
+
+// calculateSum reads numbers from the channel and calculates their sum.
+func calculateSum(ch <-chan int, wg *sync.WaitGroup) {
+	defer wg.Done() // Notify that this goroutine is done when it finishes
+
+	sum := 0
+
+	// Receive numbers from the channel and calculate their sum
+	for num := range ch {
+		sum += num
+	}
+
+	fmt.Printf("Sum of generated numbers: %d\n", sum)
+}
+In this Go program:
+
+We import the required packages, including fmt for printing, math/rand for random number generation, sync for synchronization, and time for seeding the random number generator.
+
+In the main function, we seed the random number generator with the current time using rand.Seed(time.Now().UnixNano()).
+
+We create a channel called numbersCh for communication between the generator and calculator goroutines.
+
+We use a sync.WaitGroup named wg to ensure that we wait for all goroutines to finish before exiting the program.
+
+We launch two goroutines: one for generating random numbers (generateNumbers) and another for calculating their sum (calculateSum). We pass the channel and the WaitGroup as arguments to each goroutine.
+
+Inside the generateNumbers function, we generate five random numbers, print them, and send them to the channel. We close the channel when we are done sending numbers.
+
+In the calculateSum function, we read numbers from the channel, calculate their sum, and print the result.
+
+The main function waits for both goroutines to finish by calling wg.Wait().
+
+When you run this program, you'll see that the generator goroutine produces random numbers, and the calculator goroutine calculates their sum concurrently. The program will output the generated numbers and their sum.
+
+
+
+

@@ -1,0 +1,63 @@
+Control Structures - Loops
+
+Objective: The objective of this assignment is to practice using loops (for or while) in the Go programming language for repetitive tasks.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to use loops (for or while) to generate and print a multiplication table for a given number.
+
+b. Key Concepts: Highlight the key concepts students will practice: loops, multiplication, and repetitive tasks.
+
+Task Description:
+
+a. Multiplication Table Program: Instruct students to write a Go program that generates and prints a multiplication table for a given number. The table should include products from 1 to 10.
+
+b. User Input: Ask students to take user input for the number for which the multiplication table should be generated.
+
+c. Loop Implementation: Have students use loops (for or while) to calculate the products of the given number with numbers from 1 to 10.
+
+d. Output Format: Specify the format for the output, which should resemble a multiplication table with rows and columns.
+
+Sample Output:
+
+Provide an example of expected output for a given input number. For example:
+
+plaintext
+Copy code
+Enter a number: 5
+
+Multiplication Table for 5:
+
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+Code Structure:
+
+Instruct students to structure their code with clear comments explaining each section, including the loop implementation.
+
+Testing:
+
+a. Input Validation: Ensure that students validate user input for non-numeric values and negative numbers.
+
+b. Test Cases: Encourage students to test their program with different input numbers to ensure it generates the correct multiplication table.
+
+Submission:
+
+Instruct students to submit their Go program files.
+
+Grading Criteria: This assignment will be graded based on the following criteria:
+
+User Input: Proper handling of user input.
+Loop Implementation: Correct implementation of loops to calculate the multiplication table.
+Output Format: Proper formatting of the multiplication table.
+Code Structure: Readability and clarity of code structure and comments.
+Testing: Thorough testing of the program with different input numbers.

@@ -1,0 +1,29 @@
+Modular Development with Imports
+
+Objective: The objective of this assignment is to understand the importance of importing and using external packages in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to give students hands-on experience with importing and using external packages in Go.
+
+b. Key Concepts: Emphasize that students will build a Go program that imports an external library (e.g., a popular Go package like "fmt" or "math") and uses functions or methods from that library to perform specific tasks.
+
+Task Description:
+
+a. Package Selection: Instruct students to choose an external Go package (e.g., "fmt" for formatting, "math" for mathematical operations) that they would like to work with. They can explore the Go standard library or select a third-party package.
+
+b. Main Program: Students should create a Go program (e.g., main.go) that imports the chosen package.
+
+c. Function/Method Usage: In the main program, instruct students to use functions or methods provided by the imported package to perform specific tasks. For example:
+
+If they choose the "fmt" package, they can use it to format and print text.
+If they choose the "math" package, they can use it to perform mathematical calculations.
+d. Task Examples: Provide a list of example tasks or operations that students should perform using the selected package. For instance, if they choose the "fmt" package, tasks could include formatting and printing messages. If they choose the "math" package, tasks could include calculating square roots or trigonometric functions.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) they have created, along with a brief description of the selected package, its functions/methods used, and the tasks performed.
+
+Grading Criteria: This assignment can be graded based on correctness, completeness, and the functionality of the program. Ensure that students have correctly imported the external package, used its functions/methods appropriately, and completed the specified tasks.

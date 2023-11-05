@@ -1,0 +1,43 @@
+Profiling and Optimization
+
+Objective: The objective of this assignment is to optimize code performance using profiling in Go. Students will identify a performance bottleneck in their existing Go code and use Go's profiling tools (e.g., "go tool pprof") to analyze and optimize it. They should demonstrate how profiling helped improve the code's efficiency.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on code optimization using profiling techniques in Go. Profiling helps developers identify and address performance bottlenecks.
+
+b. Key Concepts: Introduce the concept of profiling, which involves analyzing code execution to identify areas that consume excessive time or resources.
+
+Task Description:
+
+a. Select a Performance-Bottleneck Function: Instruct students to select a function or part of their existing Go code that they suspect is a performance bottleneck. It could be a function that takes too long to execute or consumes excessive memory.
+
+b. Profiling Tools: Explain the use of Go's profiling tools, such as "go tool pprof" and the net/http/pprof package for web-based profiling.
+
+c. Profiling Scenarios:
+
+Ask students to create different profiling scenarios for the selected function. They can profile the function under different inputs or use cases to gather data.
+d. Profiling Implementation:
+
+Instruct students to instrument their code to enable profiling. They should import the necessary packages and add profiling statements.
+e. Profiling Execution:
+
+Explain how to execute the code with profiling enabled and generate profiling data files.
+f. Profiling Analysis:
+
+Guide students on how to analyze the profiling data using "go tool pprof" or web-based profiling endpoints. They should focus on identifying hotspots and areas that need optimization.
+g. Optimization:
+
+Encourage students to apply optimization techniques to improve the performance of the bottlenecked code. This may involve algorithmic changes, data structure optimizations, or code refactoring.
+Performance Comparison:
+
+a. Before and After: Ask students to measure and compare the performance of the code before and after optimization. They should record metrics like execution time and memory usage.
+
+b. Documentation: Require students to document the profiling process, including descriptions of the selected function, profiling scenarios, optimization steps taken, and performance improvements achieved.
+
+Code Submission:
+
+Students should submit their Go code with profiling instrumentation, profiling data files, and documentation.
+Grading Criteria: Grading can be based on the effectiveness of profiling scenarios, the quality of profiling code, the clarity of documentation, and the degree of optimization achieved. Students should demonstrate an understanding of how profiling can lead to performance improvements in their code.

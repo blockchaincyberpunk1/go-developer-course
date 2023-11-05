@@ -1,0 +1,41 @@
+Mini Project - RESTful API (Optional)
+
+Objective: The objective of this optional assignment is to extend students' Go skills by having them create a RESTful API using a Go web framework (e.g., Echo or Gin). This project focuses on designing and implementing API endpoints for a specific purpose, emphasizing HTTP methods and error handling.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment is optional and designed for students who want to explore web development with Go. The goal is to develop a RESTful API using a Go web framework of their choice (e.g., Echo or Gin).
+
+b. Key Concepts: Highlight that this project will require students to work with a web framework, define API endpoints, handle HTTP methods (GET, POST, PUT, DELETE), and implement error handling.
+
+Task Description:
+
+a. Selecting a Project Purpose:
+
+Let students choose the purpose of their RESTful API project. Suggest options such as a task management API, a simple blog API, or any other relevant use case.
+b. API Design:
+
+Instruct students to design the API endpoints, including the URLs, HTTP methods, and request/response structures. They should create endpoints for common CRUD operations (Create, Read, Update, Delete).
+c. Framework Selection:
+
+Allow students to choose a Go web framework (e.g., Echo, Gin) that they are comfortable with or interested in learning.
+d. Implementation:
+
+Encourage students to implement the chosen API endpoints using the selected web framework. They should ensure that the API functions correctly for the specified use case.
+e. Error Handling:
+
+Emphasize the importance of proper error handling. Students should implement meaningful error responses and consider edge cases.
+Testing:
+
+a. API Testing: Instruct students to thoroughly test their RESTful API by sending requests using tools like Postman or curl. They should verify that the API behaves as expected for various scenarios.
+
+Documentation:
+
+a. API Documentation: Students should provide documentation for their API, including the available endpoints, request parameters, and response structures.
+
+Code Submission:
+
+Instruct students to submit their Go code for the RESTful API project. They should include comments and clear documentation to explain the API's purpose and usage.
+Grading Criteria: For this optional assignment, grading can be based on the correctness and functionality of the RESTful API, the quality of the API design and implementation, the effectiveness of error handling, and the clarity of code and documentation.

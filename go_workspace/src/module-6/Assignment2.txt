@@ -1,0 +1,31 @@
+File Encryption CLI
+
+Objective: The objective of this assignment is to apply Go skills to create a secure command-line application for file encryption and decryption. Students will work with file I/O, encryption algorithms, and user input handling.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to build a command-line file encryption and decryption tool using Go. The application should allow users to specify input and output files, encryption keys, and choose between encryption and decryption modes.
+
+b. Key Concepts: Highlight that this project will require students to work with file I/O, encryption algorithms (e.g., AES), command-line arguments, and error handling.
+
+Task Description:
+
+a. Implementing File Encryption and Decryption:
+
+Instruct students to use a chosen encryption algorithm (e.g., AES) to implement file encryption and decryption.
+Encourage them to provide options for specifying input and output files, encryption keys, and choosing between encryption and decryption modes using command-line arguments.
+b. User-Friendly Interface:
+
+Emphasize the importance of creating a user-friendly command-line interface with clear instructions and options.
+c. Key Handling: Guide students on handling encryption keys. They should provide a way for users to input keys securely and handle key errors gracefully.
+
+Testing:
+
+a. File Encryption Testing: Instruct students to test their CLI file encryption tool by encrypting and decrypting files with various options. They should verify that the application correctly handles encryption and decryption.
+
+Code Submission:
+
+Instruct students to submit their Go program (main.go) along with any other necessary files. They should also include comments explaining their code, especially for the CLI interface and encryption/decryption logic.
+Grading Criteria: This assignment can be graded based on the correctness and functionality of the file encryption and decryption tool, the quality of the user interface, and the clarity of code and comments. Additionally, proper encryption key handling and error handling should be assessed.

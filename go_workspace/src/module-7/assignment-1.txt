@@ -1,0 +1,72 @@
+Certainly! In this step-by-step guide, I'll walk you through writing unit tests in Go for a specific function. We'll follow the example of a simple function that calculates the sum of two integers. Let's get started with detailed comments:
+
+Step 1: Write the Go Function to Be Tested
+Create a new Go file named calculator.go. In this file, define a function called Add that takes two integers as input and returns their sum.
+go
+Copy code
+// calculator.go
+
+package calculator
+
+func Add(a, b int) int {
+    return a + b
+}
+Step 2: Write the Unit Tests
+Create a new Go file named calculator_test.go. This file will contain your unit tests for the Add function.
+
+Import the testing package and the package that contains your Add function at the beginning of the calculator_test.go file.
+
+go
+Copy code
+// calculator_test.go
+
+package calculator
+
+import "testing"
+Define a test function for the Add function using the func TestXxx(t *testing.T) format. In this example, let's create a test for the Add function:
+go
+Copy code
+func TestAdd(t *testing.T) {
+    // Test case 1: Sum of positive numbers
+    result := Add(2, 3)
+    expected := 5
+    if result != expected {
+        t.Errorf("Add(2, 3) returned %d, expected %d", result, expected)
+    }
+
+    // Test case 2: Sum of negative numbers
+    result = Add(-2, -3)
+    expected = -5
+    if result != expected {
+        t.Errorf("Add(-2, -3) returned %d, expected %d", result, expected)
+    }
+
+    // Test case 3: Sum of positive and negative numbers
+    result = Add(5, -3)
+    expected = 2
+    if result != expected {
+        t.Errorf("Add(5, -3) returned %d, expected %d", result, expected)
+    }
+}
+In the above code:
+
+We define a test function TestAdd that covers multiple test cases.
+For each test case, we call the Add function and compare the result to the expected value using t.Errorf to report failures.
+Step 3: Run the Unit Tests
+Open your terminal and navigate to the directory containing your calculator.go and calculator_test.go files.
+
+Run the tests using the go test command:
+
+bash
+Copy code
+go test
+You should see an output indicating the success or failure of your tests. If all tests pass, you'll see "PASS" in the output. If any test fails, you'll see error messages indicating the issues.
+Step 4: Documentation
+Document your test cases by adding comments that explain what each test case is verifying. Include any insights gained from running the tests.
+Step 5: Submission
+Submit your calculator_test.go file, which contains the test functions and test cases, along with any documentation related to the testing process.
+By following these steps, you've successfully written unit tests for the Add function in Go. This assignment helps you practice unit testing and ensures the correctness of your code.
+
+
+
+

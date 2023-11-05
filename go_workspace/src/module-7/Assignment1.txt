@@ -1,0 +1,50 @@
+Basic Unit Testing
+
+Objective: The objective of this assignment is to introduce students to the practice of writing unit tests in Go. Students will create a simple Go program with a function and write comprehensive unit tests to validate the correctness of that function.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on writing unit tests in Go, an essential practice in software development to ensure code quality and correctness.
+
+b. Key Concepts: Emphasize the importance of unit testing for verifying individual functions or methods in isolation.
+
+Task Description:
+
+a. Function Implementation:
+
+Provide students with a simple Go function to implement. For example, you can ask them to create a function that calculates the factorial of a given integer.
+b. Unit Testing:
+
+Instruct students to write unit tests for the function they implemented. Each test case should validate different aspects of the function's behavior, including normal scenarios and edge cases.
+
+Encourage students to use Go's built-in testing framework, including the testing package and the go test command.
+
+c. Test Cases:
+
+Suggest various test cases for students to consider, such as:
+Testing with a small positive integer.
+Testing with zero (0) as input.
+Testing with a negative integer.
+Testing with a large positive integer.
+Testing with other edge cases relevant to the chosen function.
+d. Error Handling:
+
+Remind students to include test cases that check how the function handles invalid input or error conditions, if applicable.
+Documentation:
+
+a. Code Comments: Encourage students to provide clear comments within their test functions, explaining what each test case is evaluating.
+
+b. Test Case Descriptions: Ask students to write brief descriptions for each test case to clarify its purpose and expected outcome.
+
+Running and Reporting:
+
+a. Running Tests: Guide students on how to use the go test command to run their unit tests.
+
+b. Reporting: Instruct students to report the results of their unit tests, including which tests passed and which failed.
+
+Code Submission:
+
+Ask students to submit both their Go program with the implemented function and the test file containing their unit tests.
+Grading Criteria: Grading for this assignment can be based on the correctness of the implemented function, the comprehensiveness of test cases, the effectiveness of error handling tests, the quality of code comments, and the clarity of test case descriptions.

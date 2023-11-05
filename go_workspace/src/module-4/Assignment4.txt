@@ -1,0 +1,40 @@
+Using Select for Channel Operations
+
+Objective: The objective of this assignment is to practice using the "select" statement for channel operations in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students gain practical experience with the "select" statement for handling multiple channels concurrently.
+
+b. Key Concepts: Briefly introduce the "select" statement and its role in managing concurrent operations on channels.
+
+Task Description:
+
+a. Scenario:
+
+Instruct students to create a Go program that simulates a scenario where different goroutines send data on different channels.
+Explain that the program should use the "select" statement to ensure proper synchronization and data handling.
+b. Channel Usage:
+
+Students should define multiple channels for sending and receiving data.
+Encourage them to create at least three goroutines, each sending data to a specific channel.
+c. Select Statement:
+
+Explain the concept of the "select" statement, which allows goroutines to wait on multiple communication operations.
+Instruct students to use the "select" statement to wait for data on different channels and process it accordingly.
+d. Concurrency:
+
+Emphasize the importance of concurrency in this assignment, as multiple goroutines will send and receive data concurrently.
+Testing:
+
+a. Test Scenarios: Instruct students to test their program with different combinations of data being sent on channels to ensure that the "select" statement correctly handles the incoming data.
+
+b. Edge Cases: Encourage students to consider edge cases, such as what happens when channels have different data arrival rates or when there are multiple instances of the same data.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) that demonstrates the use of the "select" statement for handling multiple channels. They should include comments to explain their code, the logic behind the "select" statement usage, and how it ensures synchronization.
+
+Grading Criteria: This assignment can be graded based on the correctness of the "select" statement implementation, the effective use of channels for communication, and the ability to handle different scenarios and edge cases.

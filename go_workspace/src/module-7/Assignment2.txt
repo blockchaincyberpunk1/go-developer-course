@@ -1,0 +1,42 @@
+Table-Driven Tests
+
+Objective: The objective of this assignment is to familiarize students with table-driven tests in Go and highlight their benefits. Students will refactor the unit tests from Assignment 1 using table-driven tests, making their test code more concise and maintainable.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on table-driven tests in Go. Table-driven tests are a concise and organized way to structure tests, especially when there are multiple input scenarios and expected outcomes.
+
+b. Key Concepts: Highlight the benefits of table-driven tests, such as improved code readability, easier maintenance, and scalability when dealing with multiple test cases.
+
+Task Description:
+
+a. Refactor Unit Tests: Instruct students to refactor the unit tests they wrote in Assignment 1 using table-driven tests.
+
+b. Table Creation:
+
+Explain that they should create test tables containing input values and their corresponding expected results. Each row in the table represents a unique test case.
+c. Test Functions:
+
+For each test function, students should iterate through the test table and apply the test logic to each set of input values. This avoids code duplication and results in cleaner test functions.
+d. Error Handling: Remind students to include test cases that verify error handling and edge cases in the table-driven format.
+
+e. Assertions: Instruct students to use assertion functions (e.g., if got != expected) to check whether the actual output matches the expected result for each test case.
+
+Documentation:
+
+a. Code Comments: Encourage students to provide comments within their test functions, explaining the purpose of the test, the input values, and the expected results.
+
+b. Table Documentation: Ask students to include a brief description of the test table, specifying what each column represents (e.g., input, expected output).
+
+Running and Reporting:
+
+a. Running Tests: Guide students on how to use the go test command to run their refactored unit tests.
+
+b. Reporting: Instruct students to report the results of their table-driven tests, including which tests passed and which failed.
+
+Code Submission:
+
+Ask students to submit both their refactored Go program with the implemented function and the test file containing their table-driven tests.
+Grading Criteria: Grading for this assignment can be based on the correctness of the refactored tests, the use of table-driven test structures, the effectiveness of error handling tests, the quality of code comments, and the clarity of table documentation.

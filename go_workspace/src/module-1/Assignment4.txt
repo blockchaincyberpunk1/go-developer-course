@@ -1,0 +1,55 @@
+Functions
+
+Objective: The objective of this assignment is to understand function definition and usage in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to practice defining and using functions in the Go programming language.
+
+b. Key Concepts: Highlight the key concepts students will practice: functions, function parameters, and function calls.
+
+Task Description:
+
+a. Calculator Program: Instruct students to write a Go program that acts as a simple calculator. The program should allow users to perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+b. Function Definitions: Ask students to define separate functions for each arithmetic operation (e.g., add, subtract, multiply, and divide). These functions should take two parameters (the numbers to operate on) and return the result.
+
+c. User Input: Have students take user input for two numbers and the desired operation (e.g., "+", "-", "*", "/").
+
+d. Function Calls: Instruct students to call the appropriate function based on the user's choice and display the result.
+
+Sample Output:
+
+Provide an example of expected output for different user inputs. For example:
+
+plaintext
+Copy code
+Enter the first number: 10
+Enter the second number: 5
+Enter the operation (+, -, *, /): *
+
+Result: 10 * 5 = 50
+Code Structure:
+
+Instruct students to structure their code with clear comments explaining each section, including function definitions and the main program logic.
+
+Testing:
+
+a. Input Validation: Ensure that students validate user input for numeric values and valid operations.
+
+b. Test Cases: Encourage students to test their program with various numbers and operations to ensure it calculates the results correctly.
+
+Submission:
+
+Instruct students to submit their Go program files.
+
+Grading Criteria: This assignment will be graded based on the following criteria:
+
+Function Definitions: Proper definition of separate functions for each arithmetic operation.
+User Input: Correct handling of user input for numbers and operations.
+Function Calls: Accurate function calls based on the user's choice.
+Output Format: Proper formatting of the result.
+Code Structure: Readability and clarity of code structure and comments.
+Testing: Thorough testing of the program with different input values and operations.

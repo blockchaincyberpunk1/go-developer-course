@@ -1,0 +1,111 @@
+Certainly! I'll walk you through implementing the Fan-Out, Fan-In pattern in Go using goroutines and channels step by step. Below is a detailed code example with comments.
+
+go
+Copy code
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"sync"
+	"time"
+)
+
+// Number of worker goroutines and amount of data to process.
+const numWorkers = 3
+const dataAmount = 10
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+
+	// Create channels for sending data to workers and receiving results.
+	dataChannel := make(chan int)
+	resultChannel := make(chan int)
+
+	// Create a WaitGroup to ensure all workers finish.
+	var wg sync.WaitGroup
+
+	// Start worker goroutines.
+	for i := 0; i < numWorkers; i++ {
+		wg.Add(1)
+		go worker(i, dataChannel, resultChannel, &wg)
+	}
+
+	// Start the aggregator goroutine.
+	go aggregator(resultChannel, &wg)
+
+	// Generate and send data to workers.
+	for i := 0; i < dataAmount; i++ {
+		data := rand.Intn(100)
+		dataChannel <- data
+	}
+
+	// Close the dataChannel to signal that no more data will be sent.
+	close(dataChannel)
+
+	// Wait for all workers and the aggregator to finish.
+	wg.Wait()
+
+	// Close the resultChannel to signal that no more results will be received.
+	close(resultChannel)
+
+	fmt.Println("All workers and the aggregator finished.")
+}
+
+// worker processes data and sends results to the resultChannel.
+func worker(id int, in <-chan int, out chan<- int, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	for data := range in {
+		result := process(data)
+		out <- result
+	}
+}
+
+// aggregator collects and processes results from workers.
+func aggregator(in <-chan int, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	sum := 0
+	count := 0
+
+	for result := range in {
+		sum += result
+		count++
+	}
+
+	average := float64(sum) / float64(count)
+	fmt.Printf("Aggregator: Sum of results: %d, Average: %.2f\n", sum, average)
+}
+
+// process simulates data processing.
+func process(data int) int {
+	// Simulate processing time.
+	time.Sleep(time.Duration(rand.Intn(100)) * time.Millisecond)
+	return data * 2
+}
+In this code:
+
+We set the number of worker goroutines (numWorkers) and the amount of data to process (dataAmount).
+
+We create two channels, dataChannel and resultChannel, for sending data to workers and receiving results from them.
+
+We use a sync.WaitGroup named wg to ensure that all worker goroutines finish before the program exits.
+
+We start multiple worker goroutines, each simulating data processing by receiving data from dataChannel, processing it, and sending the result to resultChannel.
+
+We start an aggregator goroutine that collects and processes results from resultChannel. In this example, the aggregator calculates the sum and average of results.
+
+We generate random data and send it to dataChannel for processing by workers.
+
+After sending all data, we close dataChannel to signal that no more data will be sent.
+
+We wait for all worker goroutines and the aggregator to finish using wg.Wait().
+
+Finally, we close resultChannel to signal that no more results will be received.
+
+This code demonstrates the Fan-Out, Fan-In pattern, where multiple worker goroutines process data concurrently and send their results to a central aggregator using channels. The aggregator processes and summarizes the results.
+
+
+
+

@@ -1,0 +1,29 @@
+Custom Error Types
+
+Objective: The objective of this assignment is to practice creating and using custom error types in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to give students hands-on experience with creating and using custom error types in Go.
+
+b. Key Concepts: Emphasize that students will write a Go program that defines custom error types for specific scenarios. They will write functions that return these custom error types when appropriate and demonstrate how to handle and display these custom errors.
+
+Task Description:
+
+a. Identify Scenarios: Instruct students to identify two or more scenarios in their Go program where custom error types would be appropriate. For example, they can define custom error types for "FileNotFoundError" and "InvalidInputError."
+
+b. Define Custom Error Types: Students should create custom error types by defining new types that implement the error interface. Each custom error type should include additional information relevant to the error scenario, such as an error message or error code.
+
+c. Write Functions: In the main program, students should write functions that can potentially return these custom error types. For instance, if their program involves file operations, they can create a function that may return a "FileNotFoundError" when a file is not found.
+
+d. Error Handling: Students should demonstrate how to handle these custom error types in their program. They should use type assertions to check the type of errors and extract additional information (if any) from the custom errors.
+
+e. Error Display: In their program, students should ensure that custom error messages or details are displayed clearly when an error occurs.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) they have created, along with explanations of the custom error types they defined, the functions that return these custom error types, and how they handled and displayed custom errors in their program.
+
+Grading Criteria: This assignment can be graded based on the correctness and completeness of custom error types, the effectiveness of error handling, and the clarity of error messages. Ensure that students correctly define custom error types, use them appropriately in functions, handle errors correctly, and provide meaningful error messages.

@@ -1,0 +1,39 @@
+Mini Project - Bank Account Management
+
+Objective: The objective of this assignment is to apply advanced Go concepts, including structs, interfaces, and pointers, in a mini-project involving bank account management.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to apply advanced Go concepts, such as structs, interfaces, and pointers, to build a Go program for managing bank accounts. Students will create a BankAccount struct, define interfaces for account operations, and implement methods for deposit, withdrawal, and balance inquiry.
+
+b. Key Concepts: Highlight that this project allows students to work on a real-world scenario involving data structures and interactions commonly found in software development.
+
+Task Description:
+
+a. Defining the BankAccount Struct:
+
+Instruct students to define a BankAccount struct with fields such as account number, balance, and owner. These fields should reflect the essential attributes of a bank account.
+b. Interfaces for Account Operations:
+
+Challenge students to create interfaces, e.g., AccountOperations, with methods for deposit, withdrawal, and balance inquiry. The interfaces should allow different types of accounts to implement these methods.
+c. Implementing Account Types:
+
+Encourage students to create multiple account types (e.g., savings, checking) that implement the AccountOperations interface. Each account type should define its specific behavior for deposit, withdrawal, and balance inquiry.
+d. Handling Transactions:
+
+Instruct students to create functions for conducting transactions, such as transferring money between accounts. These functions should take pointers to BankAccount instances as arguments.
+e. User Interaction:
+
+If desired, students can implement a simple user interface for interacting with their bank accounts through command-line inputs.
+Testing:
+
+a. Transaction Testing: Instruct students to test their program by creating instances of different account types, depositing and withdrawing money, and verifying the balances.
+
+b. Transaction Logs: Encourage students to implement transaction logs to track account activity.
+
+Code Submission:
+
+Instruct students to submit their Go program (main.go) along with any other necessary files. They should also include comments explaining their code and providing examples of how to use their bank account management system.
+Grading Criteria: This assignment can be graded based on the correctness of struct and interface implementations, the accuracy of transaction handling, and the clarity of code and comments. Additionally, the ability to handle various account types and transactions should be assessed.

@@ -1,0 +1,38 @@
+CLI Task Manager
+
+Objective: The objective of this assignment is to create a command-line application using Go that serves as a task manager. Students will practice using Go's standard library to build a simple but functional CLI application.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to build a command-line task manager application using Go. The application should allow users to add tasks, list tasks, mark tasks as completed, and remove tasks.
+
+b. Key Concepts: Highlight that this project will require students to work with Go's standard library for handling command-line input, data storage, and basic file operations.
+
+Task Description:
+
+a. Creating the Task Struct:
+
+Instruct students to define a Task struct that represents a task with fields such as a unique ID, task description, and status (completed or incomplete).
+b. Implementing Task Manager Features:
+
+Encourage students to implement the following features using command-line arguments:
+Adding a new task.
+Listing all tasks.
+Marking a task as completed.
+Removing a task by its ID.
+c. Data Storage:
+
+Guide students on how to store task data persistently. They can use a simple text file or Go's standard library packages like os and ioutil for file operations.
+d. User-Friendly Interface:
+
+Emphasize the importance of creating a user-friendly command-line interface with clear instructions and options.
+Testing:
+
+a. Task Management Testing: Instruct students to test their CLI task manager by adding tasks, listing tasks, marking tasks as completed, and removing tasks. They should verify that the application behaves as expected.
+
+Code Submission:
+
+Instruct students to submit their Go program (main.go) along with any other necessary files. They should also include comments explaining their code, especially for the CLI interface and data storage.
+Grading Criteria: This assignment can be graded based on the correctness and functionality of the task manager application, the quality of the user interface, and the clarity of code and comments. Additionally, proper error handling and data persistence should be assessed.

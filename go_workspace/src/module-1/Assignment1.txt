@@ -1,0 +1,62 @@
+Variable Declaration and Data Types
+
+Objective: The objective of this assignment is to practice declaring variables and working with data types in the Go programming language.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to reinforce the understanding of variable declaration and data types in Go.
+
+b. Key Concepts: Highlight the key concepts students will practice: variable declaration, initialization, data types (integers, floats, strings), and basic operations.
+
+Task Description:
+
+a. Variable Declaration: Instruct students to create a Go program that declares variables of various data types, including integers, floats, and strings. Provide examples like:
+
+go
+Copy code
+var age int
+var price float64
+var name string
+b. Variable Initialization: Have students initialize these variables with appropriate values. They can use literals or accept user input.
+
+c. Basic Operations: Ask students to perform basic operations using these variables, such as addition, subtraction, multiplication, division, and string concatenation.
+
+Sample Operations:
+
+Provide a few examples of the operations you expect in their programs. For instance:
+
+go
+Copy code
+age = 25
+price = 49.99
+name = "Alice"
+
+// Example of arithmetic operations
+totalCost := price * 3
+halfAge := age / 2
+
+// Example of string concatenation
+greeting := "Hello, " + name + "!"
+Code Structure:
+
+Instruct students to structure their code with clear variable declarations, initialization, and comments to explain their code.
+
+Testing:
+
+a. Output Display: Ask students to print the results of their operations to the console using fmt.Println().
+
+b. Testing: Ensure that they thoroughly test their code with different values to verify correctness.
+
+Submission:
+
+Instruct students to submit their Go program files.
+
+Grading Criteria: This assignment will be graded based on the following criteria:
+
+Variable Declaration: Correct declaration and initialization of variables.
+Data Types: Proper use of data types (integers, floats, strings).
+Basic Operations: Accurate implementation of basic operations.
+Code Structure: Readability and clarity of code structure and comments.
+Testing: Thorough testing with different values and scenarios.

@@ -1,0 +1,31 @@
+Variables and Data Types
+
+Objective: The objective of this assignment is to help students practice variable declaration, initialization, and working with various data types in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to reinforce students' understanding of variables and data types in Go.
+
+b. Key Concepts: Emphasize that students will practice declaring variables, initializing them with values, performing operations, and displaying results.
+
+Task Description:
+
+a. Variable Declaration: Instruct students to declare variables of different data types, including integers, floats, and strings.
+
+b. Variable Initialization: Have them initialize these variables with values of their choice.
+
+c. Operations: Ask students to perform various operations using these variables. For example, they can perform addition, subtraction, multiplication, and division for numeric variables. For strings, they can concatenate them.
+
+d. Display Results: Instruct students to print the results of these operations to the console.
+
+Sample Output:
+
+Provide an example of the expected output when the program is run with sample variable values.
+
+Code Submission:
+
+Instruct students to submit their Go program code that declares variables, initializes them, performs operations, and displays results.
+
+Grading Criteria: This assignment can be graded based on correctness and completeness. Ensure that students have correctly declared variables, initialized them, performed operations accurately, and displayed the results.

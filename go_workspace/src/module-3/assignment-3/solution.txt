@@ -1,0 +1,112 @@
+Here's an example of a Go code solution for the "Homework Assignment 3: Advanced Error Handling" with detailed comments. This example demonstrates a program that reads data from a CSV file, calculates the sum of values in each row, and handles custom error types for different error scenarios:
+
+Custom Error Types:
+
+go
+Copy code
+// customerrors/customerrors.go
+
+package customerrors
+
+import "fmt"
+
+// FileNotFoundError represents an error when a file is not found.
+type FileNotFoundError struct {
+    FileName string
+}
+
+func (e FileNotFoundError) Error() string {
+    return fmt.Sprintf("File not found: %s", e.FileName)
+}
+
+// CSVError represents an error when there is an issue with CSV parsing.
+type CSVError struct {
+    FileName string
+    Line     int
+    ErrMsg   string
+}
+
+func (e CSVError) Error() string {
+    return fmt.Sprintf("CSV parsing error in %s, line %d: %s", e.FileName, e.Line, e.ErrMsg)
+}
+
+// CalculationError represents an error during calculations.
+type CalculationError struct {
+    Line     int
+    ErrMsg   string
+}
+
+func (e CalculationError) Error() string {
+    return fmt.Sprintf("Calculation error in line %d: %s", e.Line, e.ErrMsg)
+}
+Main Program:
+
+go
+Copy code
+// main.go
+
+package main
+
+import (
+    "bufio"
+    "encoding/csv"
+    "fmt"
+    "log"
+    "os"
+    "strconv"
+    "customerrors"
+)
+
+func main() {
+    // Define the CSV file path
+    filePath := "data.csv"
+
+    // Attempt to open the CSV file
+    file, err := os.Open(filePath)
+    if err != nil {
+        if os.IsNotExist(err) {
+            customErr := customerrors.FileNotFoundError{FileName: filePath}
+            log.Fatal(customErr)
+        }
+        log.Fatal(err)
+    }
+    defer file.Close()
+
+    // Create a CSV reader
+    csvReader := csv.NewReader(bufio.NewReader(file))
+    csvReader.FieldsPerRecord = -1 // Allow variable number of fields per record
+
+    // Read and process CSV records
+    line := 1
+    for {
+        record, err := csvReader.Read()
+        if err != nil {
+            if err.Error() == "EOF" {
+                break // End of file
+            }
+            customErr := customerrors.CSVError{FileName: filePath, Line: line, ErrMsg: err.Error()}
+            log.Fatal(customErr)
+        }
+
+        sum := 0
+        for _, value := range record {
+            num, err := strconv.Atoi(value)
+            if err != nil {
+                customErr := customerrors.CalculationError{Line: line, ErrMsg: err.Error()}
+                log.Println(customErr)
+                continue
+            }
+            sum += num
+        }
+
+        fmt.Printf("Sum of values in line %d: %d\n", line, sum)
+        line++
+    }
+}
+In this Go code example, we have created a custom package customerrors that defines custom error types (FileNotFoundError, CSVError, and CalculationError) with informative error messages. The main program reads data from a CSV file, calculates the sum of values in each row, and handles errors using these custom error types.
+
+Students can use this code as a reference to create their custom error types and implement error handling for their specific coding challenge.
+
+
+
+

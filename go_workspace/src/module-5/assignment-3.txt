@@ -1,0 +1,72 @@
+Certainly! I'll guide you through creating a Go program that demonstrates interface composition. In this example, we'll define two interfaces, Speaker and Mover, and then create a new interface TalkativeMover that composes these two interfaces. We'll also create a type Person that implements the TalkativeMover interface.
+
+Here's a step-by-step explanation with detailed comments:
+
+go
+Copy code
+package main
+
+import (
+	"fmt"
+)
+
+// Define the Speaker interface with a Speak method.
+type Speaker interface {
+	Speak() string
+}
+
+// Define the Mover interface with a Move method.
+type Mover interface {
+	Move() string
+}
+
+// Define a new interface TalkativeMover by composing the Speaker and Mover interfaces.
+type TalkativeMover interface {
+	Speaker
+	Mover
+}
+
+// Define a struct called Person.
+type Person struct {
+	Name string
+}
+
+// Implement the Speak method for Person.
+func (p Person) Speak() string {
+	return fmt.Sprintf("%s says hello!", p.Name)
+}
+
+// Implement the Move method for Person.
+func (p Person) Move() string {
+	return fmt.Sprintf("%s is walking.", p.Name)
+}
+
+func main() {
+	// Create an instance of Person.
+	person := Person{Name: "Alice"}
+
+	// Demonstrate the usage of the TalkativeMover interface.
+	var talkativeMover TalkativeMover
+	talkativeMover = person
+
+	// Call the Speak and Move methods via the TalkativeMover interface.
+	fmt.Println(talkativeMover.Speak())
+	fmt.Println(talkativeMover.Move())
+}
+In this code:
+
+We define the Speaker interface with a Speak() method and the Mover interface with a Move() method.
+
+We compose a new interface TalkativeMover by embedding both the Speaker and Mover interfaces.
+
+We define a struct Person with a Name field to represent a person.
+
+We implement the Speak() method for Person to make them say hello and the Move() method to make them walk.
+
+In the main function, we create an instance of Person named Alice.
+
+We demonstrate the usage of the TalkativeMover interface by assigning the person instance to a variable of that interface type.
+
+Finally, we call the Speak() and Move() methods through the TalkativeMover interface, which allows us to access both Speaker and Mover methods.
+
+This program demonstrates how to compose interfaces in Go and create types that implement the composed interface. It showcases how interface composition allows us to group related behaviors efficiently.

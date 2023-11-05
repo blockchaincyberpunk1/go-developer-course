@@ -1,0 +1,48 @@
+CLI Dictionary Tool
+
+Objective: The objective of this assignment is to challenge students to create a command-line dictionary tool using Go. This project involves interacting with external APIs or data sources to fetch word-related information, such as definitions, synonyms, and antonyms.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to build a CLI dictionary tool in Go that provides word definitions, synonyms, and antonyms to users.
+
+b. Key Concepts: Emphasize that this project will require students to work with external APIs or data sources for fetching word-related information and to handle user interactions in the command line.
+
+Task Description:
+
+a. Dictionary Tool Features:
+
+Instruct students to design and implement a command-line dictionary tool with the following features:
+Word Definitions: Allow users to look up the definition of a word.
+Synonyms: Provide synonyms for a given word.
+Antonyms: Offer antonyms for a given word.
+b. Data Source:
+
+Students should choose an external source for word-related information. They can use APIs like Wordnik, Merriam-Webster, or any other relevant data source.
+c. User Input Handling:
+
+Guide students on how to handle user input from the command line. They should be able to accept word queries as command-line arguments.
+d. API Interaction:
+
+If students choose to use an external API, they should implement functions to make API requests and process the responses to retrieve definitions, synonyms, and antonyms.
+e. Displaying Results:
+
+Instruct students on how to display the fetched word-related information clearly and neatly in the command-line interface.
+Error Handling:
+
+a. Error Handling: Emphasize the importance of error handling in case of network errors, API responses with no results, or invalid user input.
+
+Testing:
+
+a. Tool Testing: Encourage students to thoroughly test their CLI dictionary tool with different words and scenarios to ensure that it works correctly.
+
+Documentation:
+
+a. User Guide: Students should provide a user guide or help documentation that explains how to use the CLI dictionary tool, including available commands and examples.
+
+Code Submission:
+
+Instruct students to submit their Go code for the CLI dictionary tool project. They should include comments, clear documentation, and instructions on how to run the tool.
+Grading Criteria: Grading for this assignment can be based on the functionality and correctness of the CLI dictionary tool, the effectiveness of handling user input and API interactions, the quality of error handling, and the clarity of code and documentation.

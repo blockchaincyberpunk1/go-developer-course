@@ -1,0 +1,52 @@
+Mini Project - Basic Calculator
+
+Objective: The objective of this assignment is to apply all the learned concepts in a mini-project by building a basic calculator application with a graphical user interface (GUI).
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to challenge students to build a basic calculator application using Go and a graphical user interface (GUI) library.
+
+b. Key Concepts: Highlight the key concepts students will apply: GUI development, event handling, functions, and arithmetic operations.
+
+Task Description:
+
+a. Calculator Application: Instruct students to develop a basic calculator application with a graphical user interface (GUI). They can use a Go GUI library of their choice, such as Walk, for creating the GUI.
+
+b. GUI Elements: The calculator should include the following GUI elements:
+
+Display area for showing the input and result.
+Buttons for digits (0-9).
+Buttons for basic arithmetic operations (+, -, *, /).
+Equal (=) button for calculating and displaying the result.
+Clear (C) button for clearing the input.
+c. Event Handling: Students should implement event handlers for button clicks to update the display and perform calculations.
+
+d. Arithmetic Operations: The calculator should support basic arithmetic operations (addition, subtraction, multiplication, division) on two numbers.
+
+Sample Output:
+
+Provide an example of how the calculator's GUI should look and behave. Include a sample calculation and the expected result.
+
+Code Structure:
+
+Instruct students to structure their code with clear comments explaining each section, including GUI setup, event handling, and calculation logic.
+
+Testing:
+
+a. User Interface Testing: Ensure that the GUI elements and buttons function as expected.
+
+b. Calculation Testing: Encourage students to test the calculator with various arithmetic operations and numbers to verify accurate results.
+
+Submission:
+
+Instruct students to submit their Go calculator application code.
+
+Grading Criteria: This assignment will be graded based on the following criteria:
+
+GUI Design: The completeness and user-friendliness of the GUI.
+Event Handling: Correct implementation of event handlers for button clicks.
+Arithmetic Operations: Accurate arithmetic calculations and results.
+Code Structure: Readability and clarity of code structure and comments.
+Testing: Thorough testing of the calculator's functionality.

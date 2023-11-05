@@ -1,0 +1,99 @@
+Certainly! In this walkthrough, I'll guide you through implementing the core functionality of your CLI application based on your CLI application plan. We'll continue with the example of a task management CLI application that allows users to add, list, mark tasks as done, and delete tasks. You should have already completed Homework 1 (CLI Application Planning) and Homework 2 (Command-Line Flags and Arguments). Now, let's proceed with the core functionality implementation with detailed comments:
+
+go
+Copy code
+package main
+
+import (
+	"flag"
+	"fmt"
+)
+
+type Task struct {
+	ID          int
+	Description string
+	Done        bool
+}
+
+var tasks []Task
+
+func main() {
+	addFlag := flag.String("add", "", "Add a new task")
+	listFlag := flag.Bool("list", false, "List all tasks")
+	doneFlag := flag.Int("done", -1, "Mark a task as done by ID")
+	deleteFlag := flag.Int("delete", -1, "Delete a task by ID")
+
+	flag.Parse()
+
+	if *listFlag {
+		listTasks()
+	} else if *addFlag != "" {
+		addTask(*addFlag)
+	} else if *doneFlag != -1 {
+		markTaskAsDone(*doneFlag)
+	} else if *deleteFlag != -1 {
+		deleteTask(*deleteFlag)
+	} else {
+		fmt.Println("Usage: task-cli [options]")
+		flag.PrintDefaults()
+	}
+}
+
+func addTask(description string) {
+	task := Task{ID: len(tasks) + 1, Description: description}
+	tasks = append(tasks, task)
+	fmt.Printf("Task added: %s\n", description)
+}
+
+func listTasks() {
+	fmt.Println("Tasks:")
+	for _, task := range tasks {
+		status := "Incomplete"
+		if task.Done {
+			status = "Done"
+		}
+		fmt.Printf("%d. %s (%s)\n", task.ID, task.Description, status)
+	}
+}
+
+func markTaskAsDone(taskID int) {
+	if taskID <= 0 || taskID > len(tasks) {
+		fmt.Println("Invalid task ID")
+		return
+	}
+
+	tasks[taskID-1].Done = true
+	fmt.Printf("Task marked as done: %s\n", tasks[taskID-1].Description)
+}
+
+func deleteTask(taskID int) {
+	if taskID <= 0 || taskID > len(tasks) {
+		fmt.Println("Invalid task ID")
+		return
+	}
+
+	deletedTask := tasks[taskID-1]
+	tasks = append(tasks[:taskID-1], tasks[taskID:]...)
+	fmt.Printf("Task deleted: %s\n", deletedTask.Description)
+}
+Here's the code breakdown with detailed comments:
+
+We start with the same Task struct and tasks slice for task management.
+
+In the main function, we have already defined command-line flags and parsed them using the flag package, as shown in Homework 2.
+
+We implement the core functionality in separate functions:
+
+addTask: Adds a new task with a description to the tasks slice and increments the task ID.
+listTasks: Lists all tasks, showing their IDs, descriptions, and completion status.
+markTaskAsDone: Marks a task as done by changing the Done field to true.
+deleteTask: Deletes a task by removing it from the tasks slice.
+We check the provided flags in the main function, and based on the flag, we call the corresponding function to perform the task.
+
+We also provide usage instructions if no valid flag or argument is provided.
+
+Now, you have a complete Go CLI application for task management with the core functionality implemented. You can compile and run this application to manage your tasks from the command line.
+
+
+
+

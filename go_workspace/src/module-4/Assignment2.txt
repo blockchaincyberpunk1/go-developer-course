@@ -1,0 +1,38 @@
+Communication with Channels
+
+Objective: The objective of this assignment is to understand how to use channels for inter-goroutine communication.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students practice using channels for communication between goroutines, a fundamental concept in concurrent programming in Go.
+
+b. Key Concepts: Emphasize the importance of channels for safe communication and synchronization between goroutines.
+
+Task Description:
+
+a. Message-Passing Scenario:
+
+Instruct students to write a Go program that simulates a message-passing scenario between two goroutines.
+One goroutine should send a message (a string) to the other goroutine using a channel.
+The receiving goroutine should receive the message from the channel and display it.
+b. Channel Creation:
+
+Students should create a channel to facilitate communication between the two goroutines.
+The channel should have an appropriate data type (e.g., chan string) to match the type of messages being sent.
+c. Synchronization:
+
+Emphasize the importance of synchronization to ensure that the sending and receiving goroutines execute in the correct order.
+Students should use the channel's capabilities for synchronization.
+Testing:
+
+a. Test Scenarios: Instruct students to test their program with different messages to ensure that the message-passing works correctly.
+
+b. Edge Cases: Encourage students to consider edge cases, such as sending empty messages or handling situations where the receiving goroutine expects a message but none is sent.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) that simulates the message-passing scenario using channels. They should include comments to explain their code and the logic behind channel creation and synchronization.
+
+Grading Criteria: This assignment can be graded based on the correctness of the message-passing scenario, the effective use of channels for communication, proper synchronization, and the accuracy of the displayed messages. Ensure that students correctly create channels and implement goroutines for message passing.

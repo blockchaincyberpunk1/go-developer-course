@@ -1,0 +1,60 @@
+Conditional Statements
+
+Objective: The objective of this assignment is to understand conditional statements (if, else if, else) in the Go programming language.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to practice using conditional statements (if, else if, else) to make decisions in a Go program.
+
+b. Key Concepts: Highlight the key concepts students will practice: conditional statements, user input, and branching logic.
+
+Task Description:
+
+a. Voting Eligibility Program: Instruct students to write a Go program that determines whether a person is eligible to vote based on their age.
+
+b. User Input: Ask students to take user input for the person's age.
+
+c. Conditional Statements: Have students use conditional statements (if, else if, else) to handle multiple scenarios:
+
+If the person is underage (e.g., below 18 years old), display a message indicating that they are not eligible to vote.
+If the person is of voting age (e.g., between 18 and 65 years old), display a message indicating that they are eligible to vote.
+If the person is a senior citizen (e.g., 65 years or older), display a message indicating that they are eligible to vote, with a note about senior citizens.
+d. Output Messages: Students should provide clear and informative output messages for each condition.
+
+Sample Output:
+
+Provide examples of expected output messages for different input scenarios. For instance:
+
+plaintext
+Copy code
+Enter your age: 17
+Sorry, you are not eligible to vote.
+
+Enter your age: 30
+Congratulations, you are eligible to vote!
+
+Enter your age: 70
+You are a senior citizen and eligible to vote.
+Code Structure:
+
+Instruct students to structure their code with clear comments explaining each section and condition.
+
+Testing:
+
+a. Input Validation: Ensure that students validate user input for non-numeric values and negative numbers.
+
+b. Test Cases: Encourage students to test their program with various age values to ensure it handles different scenarios correctly.
+
+Submission:
+
+Instruct students to submit their Go program files.
+
+Grading Criteria: This assignment will be graded based on the following criteria:
+
+User Input: Proper handling of user input.
+Conditional Statements: Correct implementation of conditional statements to determine voting eligibility.
+Output Messages: Clear and informative output messages for each condition.
+Code Structure: Readability and clarity of code structure and comments.
+Testing: Thorough testing of the program with different age values.

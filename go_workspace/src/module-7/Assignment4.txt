@@ -1,0 +1,48 @@
+Benchmarking Your Code
+
+Objective: The objective of this assignment is to practice benchmarking in Go. Students will identify a performance-critical function in their Go code (e.g., sorting, searching, or data transformation) and write benchmarks for it. They will use Go's built-in benchmarking tool to measure and compare the performance of different implementations.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on benchmarking in Go. Benchmarking is essential for optimizing the performance of critical functions in Go programs.
+
+b. Key Concepts: Emphasize the importance of identifying performance bottlenecks and optimizing code for efficiency.
+
+Task Description:
+
+a. Select a Performance-Critical Function: Instruct students to identify a performance-critical function in their existing Go codebase. This function should be a candidate for optimization, such as sorting a large dataset, performing complex calculations, or data transformation.
+
+b. Benchmarking Tool: Introduce students to Go's built-in benchmarking tool, which is part of the standard library (testing package). Explain that this tool allows them to measure the execution time of functions and compare different implementations.
+
+c. Benchmarking Scenarios:
+
+Ask students to create different benchmarking scenarios for the selected function. For example, if they are optimizing a sorting function, they might want to benchmark various sorting algorithms or compare sorting with different input sizes.
+d. Benchmarking Functions:
+
+Instruct students to write benchmark functions using the func BenchmarkXxx(b *testing.B) format, where Xxx is the name of the function they are benchmarking.
+e. Implementation Variations:
+
+Encourage students to create multiple variations of the function under test, each attempting to optimize it in different ways.
+f. Benchmarking Logic:
+
+Explain how to use the b.ResetTimer() function to reset the timer before each iteration of the benchmark.
+g. Running Benchmarks:
+
+Guide students on how to run the benchmarks using the go test -bench command. They can specify the -bench flag followed by the benchmark name or pattern.
+Performance Analysis:
+
+a. Interpreting Results: Instruct students to analyze the benchmark results, including execution times and memory allocations.
+
+b. Identifying Bottlenecks: Encourage them to identify bottlenecks and areas for potential optimization based on the benchmarking data.
+
+Optimization: Discuss the results with students and guide them in optimizing the performance-critical function based on their findings.
+
+Documentation:
+
+Ask students to document their benchmarking process, including descriptions of the selected function, benchmarking scenarios, and the optimizations made.
+Code Submission:
+
+Require students to submit their Go code with the implemented benchmarks and documentation.
+Grading Criteria: Grading can be based on the effectiveness of benchmarking scenarios, the quality of benchmarking code, the clarity of documentation, and the degree of optimization achieved. Students should demonstrate an understanding of how benchmarking can lead to performance improvements in their code.

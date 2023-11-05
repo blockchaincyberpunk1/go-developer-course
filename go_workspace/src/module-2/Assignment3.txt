@@ -1,0 +1,29 @@
+Control Structures in Go - If Statements
+
+Objective: The objective of this assignment is to help students understand and apply conditional statements using if statements in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to reinforce students' understanding of if statements and conditional logic in Go.
+
+b. Key Concepts: Emphasize that students will create a Go program that takes user input, uses if statements to determine if a number is even or odd, and displays the result.
+
+Task Description:
+
+a. User Input: Instruct students to create a Go program that prompts the user to enter an integer.
+
+b. Conditional Check: Ask students to use an if statement to check whether the entered number is even or odd. They should apply the appropriate conditional logic for this determination.
+
+c. Display Result: Instruct students to display a message indicating whether the entered number is even or odd. For example, "The number 5 is odd."
+
+Sample Output:
+
+Provide an example of the expected output when the program is run with sample input (both even and odd numbers).
+
+Code Submission:
+
+Instruct students to submit their Go program code that takes user input, uses if statements for conditional checks, and displays the results.
+
+Grading Criteria: This assignment can be graded based on correctness and completeness. Ensure that students have correctly implemented the if statement to check for even or odd numbers and that the program provides the expected output.

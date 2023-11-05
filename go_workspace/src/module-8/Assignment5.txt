@@ -1,0 +1,41 @@
+Stay Informed Through Go News
+
+Objective: The objective of this assignment is to encourage students to stay updated with Go language updates, best practices, and community discussions. By actively following Go-related news sources and sharing relevant updates, students will foster their knowledge and awareness of the Go ecosystem.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment aims to cultivate a habit of staying informed about Go-related news, updates, and best practices. Students will set up a system for regular news consumption and knowledge sharing.
+
+b. Benefits of Staying Informed: Highlight the advantages of staying updated in the rapidly evolving field of Go development, such as improved coding practices, awareness of new features, and a sense of belonging to the Go community.
+
+Task Description:
+
+a. Selecting News Sources:
+
+Instruct students to identify and choose reliable and relevant Go-related news sources. These sources can include:
+The official Go blog (https://blog.golang.org/).
+Go newsletters, such as the Go Weekly newsletter (https://golangweekly.com/).
+Go-related influencers and experts on social media (e.g., Twitter).
+Go community forums, discussions, and mailing lists.
+b. Setting Up a System:
+
+Ask students to create a system for regularly consuming news from the selected sources. This may involve subscribing to newsletters, following relevant individuals on social media, or configuring RSS feeds.
+c. Knowledge Sharing:
+
+Encourage students to actively read and engage with the content they find interesting or relevant. This can include articles, blog posts, tweets, and discussions.
+Instruct students to share noteworthy updates, articles, or best practices with their peers. They can do this through group discussions, forums, or social media platforms.
+d. Reflection:
+
+Require students to periodically reflect on what they've learned and how it has influenced their Go development practices. They should consider the impact of staying informed on their programming skills and projects.
+Summary and Sharing:
+
+Throughout the assignment period, students should maintain a summary of the news, updates, or best practices they've encountered.
+Final Report:
+
+At the end of the assignment, students should submit a final report summarizing their experiences, including:
+A list of the Go news sources they followed.
+A summary of noteworthy updates and best practices they discovered.
+Reflections on how staying informed impacted their Go development journey.
+Grading Criteria: Grading can be based on the quality and relevance of the updates shared, the consistency of engagement with news sources, and the depth of reflection in the final report.

@@ -1,0 +1,155 @@
+Certainly! I'll guide you through creating a Go program that demonstrates three concurrency patterns: Worker Pool, Publish-Subscribe, and Mutex. Below is a step-by-step explanation with detailed comments.
+
+go
+Copy code
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"sync"
+	"time"
+)
+
+// Worker Pool Pattern
+
+// Job represents a task to be executed by a worker.
+type Job struct {
+	ID  int
+	Job string
+}
+
+func worker(id int, jobs <-chan Job, results chan<- Job, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	for job := range jobs {
+		fmt.Printf("Worker %d is processing Job %d: %s\n", id, job.ID, job.Job)
+		// Simulate work by sleeping for a random duration.
+		time.Sleep(time.Duration(rand.Intn(1000)) * time.Millisecond)
+		results <- job
+	}
+}
+
+// Publish-Subscribe Pattern
+
+type Publisher struct {
+	mu         sync.Mutex
+	subscribers []chan string
+}
+
+func (p *Publisher) Subscribe(subscriber chan string) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+	p.subscribers = append(p.subscribers, subscriber)
+}
+
+func (p *Publisher) Publish(message string) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+	for _, subscriber := range p.subscribers {
+		subscriber <- message
+	}
+}
+
+func (p *Publisher) Unsubscribe(subscriber chan string) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+	for i, sub := range p.subscribers {
+		if sub == subscriber {
+			p.subscribers = append(p.subscribers[:i], p.subscribers[i+1:]...)
+			close(subscriber)
+			break
+		}
+	}
+}
+
+// Mutex Pattern
+
+var counter int
+var mu sync.Mutex
+
+func increment() {
+	mu.Lock()
+	defer mu.Unlock()
+	counter++
+}
+
+func main() {
+	// Worker Pool Pattern
+	const numJobs = 5
+	const numWorkers = 3
+
+	jobs := make(chan Job, numJobs)
+	results := make(chan Job, numJobs)
+	var wg sync.WaitGroup
+
+	for i := 1; i <= numWorkers; i++ {
+		wg.Add(1)
+		go worker(i, jobs, results, &wg)
+	}
+
+	for i := 1; i <= numJobs; i++ {
+		jobs <- Job{ID: i, Job: fmt.Sprintf("Job %d", i)}
+	}
+	close(jobs)
+
+	go func() {
+		wg.Wait()
+		close(results)
+	}()
+
+	for result := range results {
+		fmt.Printf("Job %d completed by a worker: %s\n", result.ID, result.Job)
+	}
+
+	// Publish-Subscribe Pattern
+	publisher := Publisher{}
+	subscriber1 := make(chan string)
+	subscriber2 := make(chan string)
+
+	publisher.Subscribe(subscriber1)
+	publisher.Subscribe(subscriber2)
+
+	go func() {
+		for message := range subscriber1 {
+			fmt.Println("Subscriber 1 received:", message)
+		}
+	}()
+
+	go func() {
+		for message := range subscriber2 {
+			fmt.Println("Subscriber 2 received:", message)
+		}
+	}()
+
+	publisher.Publish("Message 1")
+	publisher.Publish("Message 2")
+
+	// Mutex Pattern
+	const numIterations = 1000
+	var wgMutex sync.WaitGroup
+
+	for i := 0; i < numIterations; i++ {
+		wgMutex.Add(1)
+		go func() {
+			defer wgMutex.Done()
+			increment()
+		}()
+	}
+
+	wgMutex.Wait()
+	fmt.Printf("Counter value: %d\n", counter)
+}
+In this code:
+
+We define the Worker Pool Pattern, where worker goroutines process jobs concurrently. We create a channel for jobs and results, start worker goroutines to process jobs, and wait for them to complete.
+
+We implement the Publish-Subscribe Pattern using a Publisher struct that allows subscribers to register and receive messages. We demonstrate two subscribers receiving messages published by the publisher.
+
+We showcase the Mutex Pattern by incrementing a shared counter using goroutines. We protect access to the shared counter with a mutex to prevent data races.
+
+The program demonstrates these three concurrency patterns and their practical use cases. Each section includes comments to explain the pattern and its implementation.
+
+
+
+

@@ -1,0 +1,37 @@
+Mini Project - Simple Calculator
+
+Objective: The objective of this assignment is to challenge students to apply Go fundamentals in a mini-project by building a simple command-line calculator application.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to give students the opportunity to apply Go fundamentals in a mini-project. They will build a command-line calculator that can perform basic arithmetic operations.
+
+b. Key Concepts: Emphasize that students will need to use concepts such as user input, conditional statements, and functions to create this calculator.
+
+Task Description:
+
+a. Basic Operations: Instruct students to create a Go program that can perform the following arithmetic operations: addition, subtraction, multiplication, and division.
+
+b. User Input: The program should take user input for two numbers and the operation to be performed. Students can use the fmt.Scan function to read user input from the command line.
+
+c. Calculate and Display Result: Ask students to write functions for each arithmetic operation. The program should then call the appropriate function based on the user's choice and display the result.
+
+d. Error Handling: Encourage students to include error handling to check for invalid inputs (e.g., division by zero) and provide appropriate error messages.
+
+Sample Interaction:
+
+Provide a sample interaction with the program to demonstrate how it should work. For example:
+
+sql
+Copy code
+Enter the first number: 10
+Enter the second number: 5
+Select operation (+, -, *, /): +
+Result: 10 + 5 = 15
+Code Submission:
+
+Instruct students to submit their Go program code for the simple calculator project.
+
+Grading Criteria: This assignment can be graded based on correctness, completeness, and the functionality of the calculator program. Ensure that students have correctly implemented each arithmetic operation, handled user input, and provided clear error messages when necessary.

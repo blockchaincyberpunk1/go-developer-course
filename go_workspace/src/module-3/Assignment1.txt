@@ -1,0 +1,45 @@
+Creating Functions and Packages
+
+Objective: The objective of this assignment is to practice defining functions and organizing code into packages in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to give students hands-on experience with creating functions and organizing code into packages in Go.
+
+b. Key Concepts: Emphasize that students will define functions for common mathematical operations (addition, subtraction, multiplication, division) in a separate package and then use these functions in their main program.
+
+Task Description:
+
+a. Package Creation: Instruct students to create a new Go package (e.g., mathops) that contains functions for the following mathematical operations:
+
+Addition
+Subtraction
+Multiplication
+Division
+Each function should take two input parameters and return the result.
+
+b. Main Program: Students should create a separate Go program (e.g., main.go) that imports the mathops package and uses these functions to perform mathematical calculations.
+
+c. User Interaction: The program should take user input for two numbers and the operation to be performed. Students can use the fmt.Scan function to read user input from the command line.
+
+d. Function Usage: Instruct students to call the appropriate function from the mathops package based on the user's choice and display the result.
+
+e. Error Handling: Encourage students to include error handling to check for invalid inputs (e.g., division by zero) and provide appropriate error messages.
+
+Sample Interaction:
+
+Provide a sample interaction with the program to demonstrate how it should work. For example:
+
+sql
+Copy code
+Enter the first number: 10
+Enter the second number: 5
+Select operation (+, -, *, /): +
+Result: 10 + 5 = 15
+Code Submission:
+
+Instruct students to submit both the Go package (mathops) and the main program (main.go) as part of their assignment submission.
+
+Grading Criteria: This assignment can be graded based on correctness, completeness, and the functionality of the program. Ensure that students have correctly defined functions in the package, imported and used the package in the main program, and handled user input and errors appropriately.

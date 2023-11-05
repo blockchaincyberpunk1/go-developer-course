@@ -1,0 +1,43 @@
+Attend a Go Meetup or Event
+
+Objective: The objective of this assignment is to encourage students to experience community engagement in person or virtually by attending a local Go meetup, a virtual Go conference, or a related event. They should write a summary of their experience, highlighting key takeaways and interesting discussions. Alternatively, they can organize a small Go-themed event themselves and report on their experiences.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on community engagement and learning through participation in Go meetups, conferences, or events. Students have the option to attend an existing event or organize a small Go-themed event themselves.
+
+b. Importance of Networking: Emphasize the importance of networking and learning from peers in the Go community. Attending events provides opportunities to gain insights, exchange ideas, and make professional connections.
+
+Task Description:
+
+a. Event Selection: Instruct students to choose one of the following options:
+
+Option 1: Attend an existing local Go meetup, virtual Go conference, or a related event. They can find information about Go meetups and events on platforms like Meetup.com or Eventbrite.
+Option 2: Organize a small Go-themed event themselves. This could be a virtual meetup, a coding workshop, or a lightning talk session. They should plan and execute the event, even if it involves a small group of participants.
+b. Participation: If students choose Option 1 (attending an existing event), they should actively participate in the event. This may include attending sessions, joining discussions, and networking with other attendees.
+
+If students choose Option 2 (organizing their event), they should plan the event, invite participants, and facilitate the sessions or discussions.
+
+c. Documentation: Require students to take notes during the event or their event planning process. They should document:
+
+Date and time of the event.
+Event agenda or schedule.
+Key takeaways, interesting insights, or discussions from the event.
+Names and profiles of any notable speakers or participants.
+Any challenges faced during the event planning (Option 2).
+Reflective Report:
+
+a. Report Preparation: Ask students to prepare a reflective report based on their event experience.
+
+b. Content of the Report:
+
+Summarize the event they attended or organized, including its purpose and focus.
+Highlight key takeaways, interesting discussions, or new insights gained.
+Reflect on how attending or organizing the event contributed to their understanding of Go development and the Go community.
+Discuss any networking opportunities and connections made during the event.
+Submission:
+
+Students should submit their reflective report along with any event-related documentation (notes, schedules, etc.).
+Grading Criteria: Grading can be based on the depth of engagement and participation in the event, the quality of the report, and the extent to which students reflect on their experiences and the impact on their learning and networking within the Go community.

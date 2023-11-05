@@ -1,0 +1,45 @@
+CLI Chat Application (Optional)
+
+Objective: The objective of this assignment is to challenge advanced students to create a command-line chat application in Go. This project involves implementing features like user registration, real-time messaging, and message persistence using Go's concurrency features.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment is designed for advanced students who want to explore more complex CLI application development in Go. They will build a command-line chat application with user registration, real-time messaging, and message persistence features.
+
+b. Key Concepts: Emphasize that this project will require students to work with goroutines, channels, and concurrent programming in Go to enable real-time messaging.
+
+Task Description:
+
+a. Chat Application Features:
+
+Instruct advanced students to design and implement a command-line chat application in Go with the following features:
+User Registration: Allow users to register with unique usernames.
+Real-Time Messaging: Enable real-time chat between registered users.
+Message Persistence: Store and retrieve chat messages for future reference.
+b. User Management:
+
+Guide students on how to manage user registration, including the creation of user profiles with usernames and other relevant information.
+c. Real-Time Communication:
+
+Encourage students to use Go's concurrency features, such as goroutines and channels, to enable real-time messaging between users.
+d. Message Persistence:
+
+Explain that messages should be stored and retrieved to provide a chat history for users. Students can use a file-based storage system or a database, depending on their preference.
+Error Handling:
+
+a. Error Handling: Emphasize the importance of error handling in various aspects of the chat application, including user registration, messaging, and data storage.
+
+Testing:
+
+a. Application Testing: Encourage students to thoroughly test their command-line chat application to ensure that it functions correctly in various scenarios, including real-time messaging and message retrieval.
+
+Documentation:
+
+a. User Guide: Students should provide a user guide or help documentation that explains how to use the CLI chat application, including registration, messaging, and message retrieval.
+
+Code Submission:
+
+Instruct advanced students to submit their Go code for the CLI chat application project. They should include comments, clear documentation, and instructions on how to run the application.
+Grading Criteria: Grading for this assignment can be based on the functionality and correctness of the CLI chat application, the effective use of Go's concurrency features for real-time messaging, the quality of error handling, and the clarity of code and documentation.

@@ -1,0 +1,37 @@
+Pointer Basics
+
+Objective: The objective of this assignment is to practice working with pointers in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students understand how to work with pointers in Go, including declaring, dereferencing, and modifying values using pointers.
+
+b. Key Concepts: Highlight that students will write a Go program that uses pointers to modify the values of variables. They will create functions that take pointers as arguments and perform operations on the variables they point to.
+
+Task Description:
+
+a. Pointer Variables:
+
+Instruct students to create a Go program that includes variables of different data types (e.g., integers, floats, strings).
+Encourage students to declare pointer variables for these data types. For example, they can declare *int pointers, *float64 pointers, and *string pointers.
+b. Pointer Functions:
+
+Ask students to define functions that take pointers as arguments. For example, they can create a function that increments an integer value using a pointer to that integer.
+Students should also define functions that demonstrate operations like modification, dereferencing, and printing values using pointers for each data type.
+c. Usage and Demonstration:
+
+Encourage students to use these functions to modify and print the values of the variables they declared in step 2a.
+Demonstrate how modifying values through pointers affects the original variables.
+Testing:
+
+a. Pointer Manipulation: Instruct students to test their program by calling the pointer functions with different data types and verifying that the values are correctly modified.
+
+b. Printing Results: Ask students to add print statements to display the values of variables before and after pointer operations, helping them verify the changes.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) containing the variable declarations, pointer definitions, and functions. They should also provide comments explaining their code and demonstrating the use of pointers.
+
+Grading Criteria: This assignment can be graded based on the correctness of the pointer operations, the accuracy of variable modifications using pointers, and the clarity of the code and comments.

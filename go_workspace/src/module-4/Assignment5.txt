@@ -1,0 +1,44 @@
+Mini Project - Concurrent Web Scraping
+
+Objective: The objective of this assignment is to apply concurrency in Go to practical web scraping tasks.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to challenge students to apply concurrent programming techniques to web scraping, a real-world task that benefits from parallelism.
+
+b. Key Concepts: Mention that this project will require students to use goroutines to make parallel HTTP requests and collect data concurrently.
+
+Task Description:
+
+a. Project Overview:
+
+Instruct students to create a Go program that scrapes data from multiple websites concurrently.
+Emphasize that this project should simulate a real-world scenario where web scraping can be time-consuming, and concurrency can significantly improve efficiency.
+b. Website Selection:
+
+Ask students to choose a set of websites they want to scrape. They should select at least three websites with different types of content (e.g., news articles, product listings, blog posts).
+c. Concurrency and Goroutines:
+
+Explain the concept of goroutines and their role in concurrency.
+Instruct students to create a goroutine for each website they want to scrape.
+Each goroutine should make HTTP requests to its assigned website and collect data.
+d. Data Collection:
+
+Clarify that the data collected from each website can vary but should include relevant information, such as article titles, product prices, or blog post summaries.
+e. Displaying Results:
+
+Students should design their program to collect data concurrently and then display the results once all goroutines have completed.
+The program can display the data in the console, save it to a file, or present it in any suitable format.
+Testing:
+
+a. Testing Data: Instruct students to test their program with different websites and data structures to ensure that it effectively collects and displays data concurrently.
+
+b. Error Handling: Encourage students to consider error handling for cases where websites might be temporarily unavailable or respond with errors.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) for their concurrent web scraping project. They should include comments explaining their code, the websites they chose for scraping, and the concurrency strategy they employed.
+
+Grading Criteria: This assignment can be graded based on the effectiveness of the concurrent web scraping implementation, error handling, and the ability to collect and display data from multiple websites concurrently.

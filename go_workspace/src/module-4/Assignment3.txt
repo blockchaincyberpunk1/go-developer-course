@@ -1,0 +1,43 @@
+ Producer-Consumer Problem
+
+Objective: The objective of this assignment is to explore concurrent programming patterns, specifically the producer-consumer problem, in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students gain practical experience with concurrent programming patterns, particularly the producer-consumer problem.
+
+b. Key Concepts: Briefly introduce the concepts of producers, consumers, and how they communicate via channels.
+
+Task Description:
+
+a. Producer-Consumer Scenario:
+
+Instruct students to write a Go program that simulates the classic producer-consumer problem.
+Explain that in this scenario, multiple producer goroutines will generate items, and multiple consumer goroutines will consume these items.
+b. Channel Usage:
+
+Students should use channels to facilitate communication between producers and consumers.
+Define channels for items produced and items consumed.
+c. Concurrency:
+
+Encourage students to create multiple producer and consumer goroutines (at least two of each) to demonstrate concurrent processing.
+Each producer should generate items and send them to a shared channel, while consumers should retrieve items from the same channel.
+d. Buffering:
+
+Discuss the option of using buffered channels to control the number of items that can be produced or consumed at a time.
+e. Synchronization:
+
+Emphasize the importance of synchronization to ensure that producers do not send items when the channel is full and consumers do not consume when the channel is empty.
+Testing:
+
+a. Test Scenarios: Instruct students to test their program with different numbers of producers and consumers to ensure proper synchronization and item processing.
+
+b. Edge Cases: Encourage students to consider edge cases, such as what happens when producers generate items faster than consumers can consume them or vice versa.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) that solves the producer-consumer problem. They should include comments to explain their code, the logic behind channel usage, and synchronization mechanisms.
+
+Grading Criteria: This assignment can be graded based on the correctness of the producer-consumer implementation, the effective use of channels for communication and synchronization, and the ability to handle different scenarios and edge cases.

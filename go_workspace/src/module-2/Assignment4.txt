@@ -1,0 +1,29 @@
+Control Structures in Go - Loops
+
+Objective: The objective of this assignment is to help students practice using loops in Go to calculate and print the factorial of a given number.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to reinforce students' understanding of loops in Go by using them to calculate the factorial of a number.
+
+b. Key Concepts: Emphasize that students will create a Go program that takes user input for a number, uses a loop (e.g., for loop or while loop) to calculate its factorial, and then displays the result.
+
+Task Description:
+
+a. User Input: Instruct students to create a Go program that prompts the user to enter a positive integer.
+
+b. Factorial Calculation: Ask students to use a loop to calculate the factorial of the entered number. They can use a for loop or any other type of loop available in Go for this purpose.
+
+c. Display Result: Instruct students to display the calculated factorial of the entered number as output.
+
+Sample Output:
+
+Provide an example of the expected output when the program is run with sample input (e.g., factorial of 5 is 120).
+
+Code Submission:
+
+Instruct students to submit their Go program code that takes user input, uses a loop to calculate the factorial, and displays the result.
+
+Grading Criteria: This assignment can be graded based on correctness and completeness. Ensure that students have correctly implemented the loop to calculate the factorial of the entered number and that the program provides the expected output.

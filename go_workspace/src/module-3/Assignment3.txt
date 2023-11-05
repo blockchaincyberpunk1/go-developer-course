@@ -1,0 +1,27 @@
+Error Handling with Built-in Functions
+
+Objective: The objective of this assignment is to learn how Go handles errors using built-in functions.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to give students hands-on experience with error handling in Go using built-in functions.
+
+b. Key Concepts: Emphasize that students will write a Go program that performs a file operation (e.g., reading a file) and uses built-in functions for error handling. The program should handle errors gracefully and provide informative error messages.
+
+Task Description:
+
+a. File Operation: Instruct students to choose a file operation they'd like to perform (e.g., reading a text file, copying a file).
+
+b. Go Program: Students should create a Go program (e.g., main.go) that performs the chosen file operation.
+
+c. Error Handling: In the main program, instruct students to use built-in functions for error handling when performing the file operation. For example, if they are reading a file, they should use functions like os.Open and check for errors returned by these functions.
+
+d. Graceful Handling: Students should implement graceful error handling by providing informative error messages to users. When an error occurs, the program should print an error message that explains what went wrong and why.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) they have created, along with a brief description of the chosen file operation, the built-in functions used for error handling, and the error messages provided.
+
+Grading Criteria: This assignment can be graded based on correctness, completeness, and the effectiveness of error handling. Ensure that students have correctly used built-in functions for error handling, provided meaningful error messages, and handled potential errors gracefully.

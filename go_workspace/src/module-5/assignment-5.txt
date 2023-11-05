@@ -1,0 +1,85 @@
+Certainly! I'll guide you through creating a Go program that leverages structs and interfaces to design a flexible and reusable solution for a media player program that can play audio and video files. We'll define a Player interface and create concrete types AudioPlayer and VideoPlayer that satisfy this interface. Detailed comments will be provided throughout the code.
+
+go
+Copy code
+package main
+
+import "fmt"
+
+// Define a Player interface with Play, Pause, and Stop methods.
+type Player interface {
+    Play()
+    Pause()
+    Stop()
+}
+
+// Define an AudioPlayer struct that satisfies the Player interface.
+type AudioPlayer struct {
+    songTitle string
+}
+
+// Implement methods for AudioPlayer to satisfy the Player interface.
+func (a *AudioPlayer) Play() {
+    fmt.Printf("Playing audio: %s\n", a.songTitle)
+}
+
+func (a *AudioPlayer) Pause() {
+    fmt.Println("Pausing audio playback")
+}
+
+func (a *AudioPlayer) Stop() {
+    fmt.Println("Stopping audio playback")
+}
+
+// Define a VideoPlayer struct that satisfies the Player interface.
+type VideoPlayer struct {
+    videoTitle string
+}
+
+// Implement methods for VideoPlayer to satisfy the Player interface.
+func (v *VideoPlayer) Play() {
+    fmt.Printf("Playing video: %s\n", v.videoTitle)
+}
+
+func (v *VideoPlayer) Pause() {
+    fmt.Println("Pausing video playback")
+}
+
+func (v *VideoPlayer) Stop() {
+    fmt.Println("Stopping video playback")
+}
+
+func main() {
+    // Create instances of AudioPlayer and VideoPlayer.
+    audio := &AudioPlayer{songTitle: "Sample Song"}
+    video := &VideoPlayer{videoTitle: "Sample Video"}
+
+    // Demonstrate playback using the Player interface.
+    playMedia(audio)
+    playMedia(video)
+}
+
+// playMedia function accepts a Player interface and demonstrates its methods.
+func playMedia(p Player) {
+    p.Play()
+    p.Pause()
+    p.Play()
+    p.Stop()
+}
+In this code:
+
+We define a Player interface with Play, Pause, and Stop methods that a media player should implement.
+
+We create two structs, AudioPlayer and VideoPlayer, each representing a media player for audio and video files.
+
+We implement the Play, Pause, and Stop methods for both AudioPlayer and VideoPlayer to satisfy the Player interface.
+
+In the main function, we create instances of AudioPlayer and VideoPlayer.
+
+We demonstrate the use of the Player interface by calling the playMedia function with both AudioPlayer and VideoPlayer instances. This showcases the flexibility of the solution as both types can be treated as a Player.
+
+This program demonstrates how structs and interfaces can be used to create a flexible and reusable solution for a media player program. The Player interface allows us to interact with different media players using a common set of methods.
+
+
+
+

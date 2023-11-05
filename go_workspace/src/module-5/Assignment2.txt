@@ -1,0 +1,37 @@
+Interfaces and Polymorphism
+
+Objective: The objective of this assignment is to understand how interfaces enable polymorphism in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students understand how interfaces in Go enable polymorphism, allowing different types to implement the same methods.
+
+b. Key Concepts: Highlight that students will define an interface called "Shape" with methods for calculating the area and perimeter. They will then create multiple struct types (e.g., "Circle," "Rectangle") that implement this interface.
+
+Task Description:
+
+a. Interface Definition:
+
+Instruct students to create a Go program that defines an interface called "Shape."
+The "Shape" interface should include methods like "Area" and "Perimeter." Both methods should return floating-point values.
+b. Struct Types:
+
+Ask students to create at least two struct types (e.g., "Circle" and "Rectangle") that implement the "Shape" interface.
+Each struct type should define its specific attributes (e.g., radius and width/height) and implement the "Area" and "Perimeter" methods accordingly.
+c. Polymorphism Demonstration:
+
+Encourage students to demonstrate polymorphic behavior by creating instances of both "Circle" and "Rectangle" structs and storing them in variables of type "Shape."
+They should calculate and display the area and perimeter of these shapes using the methods defined in the "Shape" interface.
+Testing:
+
+a. Method Testing: Instruct students to test their program by creating various shapes (e.g., circles and rectangles) and verifying that the area and perimeter calculations are accurate.
+
+b. Polymorphism Testing: Ask students to specifically test the polymorphic behavior by using "Shape" variables to call the methods on different shape types.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) containing the interface definition, struct types, and method implementations. They should also provide comments explaining their code and demonstrating the polymorphic behavior.
+
+Grading Criteria: This assignment can be graded based on the correctness of the interface definition, the implementation of struct types, and the successful demonstration of polymorphic behavior.

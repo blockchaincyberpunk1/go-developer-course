@@ -1,0 +1,39 @@
+Struct Embedding
+
+Objective: The objective of this assignment is to explore the concept of struct embedding in Go.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students understand the concept of struct embedding in Go, where one struct type includes another struct type as a field. Struct embedding is used to compose complex data structures efficiently.
+
+b. Key Concepts: Highlight that students will create a Go program that demonstrates struct embedding by defining a struct that embeds other structs, and then they will use this composition to represent and manipulate data.
+
+Task Description:
+
+a. Struct Embedding:
+
+Instruct students to define multiple struct types. For example, they can create structs like Person, Address, and ContactInfo, each with its own set of fields (e.g., name, age, street, city, email).
+b. Struct Composition:
+
+Challenge students to create a struct, e.g., Employee, that embeds one or more of the previously defined structs. For instance, Employee could embed Person, Address, and ContactInfo structs.
+c. Data Representation:
+
+Ask students to create instances of the Employee struct and populate them with data.
+Encourage them to demonstrate how struct embedding allows them to access fields of embedded structs directly through the containing struct. For example, they can access Employee's name field, which is embedded from Person.
+d. Manipulation:
+
+Instruct students to demonstrate how to modify and access data in the embedded structs.
+For example, they can change the employee's address by directly accessing the embedded Address struct fields.
+Testing:
+
+a. Data Manipulation: Instruct students to test their program by creating instances of the Employee struct, modifying embedded struct fields, and verifying that the changes are reflected correctly.
+
+b. Output Verification: Ask students to add print statements to display the data before and after modification, helping them verify the changes.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) that defines the struct types, demonstrates struct embedding, and includes comments explaining their code and showcasing the use of struct embedding.
+
+Grading Criteria: This assignment can be graded based on the correctness of struct embedding, the accuracy of data manipulation, and the clarity of code and comments.

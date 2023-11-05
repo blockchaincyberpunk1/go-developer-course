@@ -1,0 +1,39 @@
+Basic Goroutines
+
+Objective: The objective of this assignment is to practice creating and managing goroutines.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to help students practice creating and managing goroutines, a fundamental concept in concurrent programming in Go.
+
+b. Key Concepts: Emphasize the importance of concurrency in modern software development and how goroutines enable parallel execution.
+
+Task Description:
+
+a. Goroutine-Based Calculation:
+
+Instruct students to write a Go program that performs a time-consuming calculation using multiple goroutines.
+For example, they can calculate the factorial of a number concurrently using goroutines.
+The program should take a number as input and calculate its factorial using goroutines.
+b. Managing Goroutines:
+
+Students should create a separate goroutine for each step of the calculation.
+These goroutines should work concurrently to perform their tasks.
+Emphasize the importance of proper synchronization to ensure that all goroutines complete before displaying the result.
+c. Displaying the Result:
+
+After all goroutines have completed their tasks, students should display the result of the calculation.
+Ensure that the final result is accurate and matches the expected output.
+Testing:
+
+a. Test Scenarios: Instruct students to test their program with different input values to ensure that the goroutines are functioning correctly.
+
+b. Performance Testing: Encourage students to test the performance of their program by calculating factorials of large numbers. This will demonstrate the benefits of concurrency.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) that performs the concurrent calculation of factorials. They should include comments to explain their code and the logic behind goroutine creation and synchronization.
+
+Grading Criteria: This assignment can be graded based on the correctness of the concurrent calculation, the effective use of goroutines, proper synchronization, and the accuracy of the final result. Ensure that students correctly create and manage goroutines and display the accurate factorial of the input number.

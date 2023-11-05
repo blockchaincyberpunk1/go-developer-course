@@ -1,0 +1,45 @@
+Writing Integration Tests
+
+Objective: The objective of this assignment is to introduce students to integration testing in Go. Students will write integration tests for a Go program that interacts with external services or databases. They will use testing frameworks and tools like "httptest" for HTTP-based services or set up test databases for database interactions.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that this assignment focuses on integration testing in Go. Integration tests are designed to verify the interactions between different components of a program, such as interactions with external services or databases.
+
+b. Key Concepts: Emphasize the importance of testing interactions with external services or databases to ensure the correctness and reliability of a Go program.
+
+Task Description:
+
+a. Select a Go Program: Instruct students to select a Go program they have previously written or provide them with a sample program that interacts with external services (e.g., HTTP requests to an API) or a database.
+
+b. Integration Testing Frameworks:
+
+Explain that students can use testing frameworks like "httptest" for HTTP-based services or create a test database for database interactions.
+c. Test Scenarios:
+
+Guide students to identify key test scenarios that cover different aspects of integration. For example, for an HTTP-based service, test scenarios may include testing different HTTP methods, handling error responses, and verifying the correctness of data retrieved.
+d. Test Setup:
+
+Instruct students to set up test environments or configurations specific to their chosen integration points. For example, they may need to mock external services or create a test database with predefined data.
+e. Integration Test Functions:
+
+Ask students to write test functions that simulate interactions with external services or databases. These functions should make requests, handle responses, and assert the expected outcomes.
+f. Assertions and Error Handling:
+
+Remind students to use assertions to verify that the actual outcomes match the expected results. Additionally, they should include error handling tests to ensure that their program handles error responses correctly.
+Documentation:
+
+a. Code Comments: Encourage students to provide comments within their integration test functions, explaining the purpose of each test and the expected outcomes.
+
+Running and Reporting:
+
+a. Running Tests: Guide students on how to run their integration tests using the go test command.
+
+b. Reporting: Instruct students to report the results of their integration tests, including which tests passed and which failed. They should also describe any issues or challenges they encountered during testing.
+
+Code Submission:
+
+Ask students to submit their Go program with the implemented integration tests.
+Grading Criteria: Grading for this assignment can be based on the correctness of the integration tests, the effectiveness of test scenarios, the quality of code comments, and the clarity of the testing documentation. Integration tests should cover various aspects of interactions with external services or databases.

@@ -1,0 +1,36 @@
+Mini Project - Command-Line Calculator with Error Handling
+
+Objective: The objective of this assignment is to apply Go language features in a mini-project with error handling.
+
+Instructions:
+
+Introduction to the Assignment:
+
+a. Objective: Explain that the goal of this assignment is to challenge students to enhance the previously created command-line calculator (from Module 2) by incorporating error handling.
+
+b. Key Concepts: Emphasize that students will practice handling division by zero and invalid input gracefully. They should display custom error messages for these scenarios.
+
+Task Description:
+
+a. Use Previous Calculator Code: Instruct students to use the code of the command-line calculator they built in Assignment 5 (Module 2).
+
+b. Error Handling for Division by Zero:
+
+Students should enhance the calculator to handle division by zero gracefully.
+When the user attempts to divide by zero, the program should detect this condition and display a custom error message (e.g., "Division by zero is not allowed").
+Guide students to use appropriate error handling techniques to achieve this.
+c. Error Handling for Invalid Input:
+
+Students should also handle invalid input cases. For instance, if a non-numeric value is provided as input when expecting numbers, the program should detect this and display a custom error message (e.g., "Invalid input. Please enter valid numbers").
+Guide students to validate user input and provide meaningful error messages.
+Testing:
+
+a. Test Scenarios: Instruct students to thoroughly test their enhanced calculator with different test scenarios. They should ensure that it correctly detects and handles division by zero and invalid input cases.
+
+b. Demonstration: Students should demonstrate their calculator's error-handling capabilities by running the program and intentionally causing these errors. The program should display custom error messages for each scenario.
+
+Code Submission:
+
+Instruct students to submit the Go program (main.go) of their enhanced command-line calculator, along with explanations of how they implemented error handling for division by zero and invalid input. They should also include screenshots or recorded demonstrations of their program in action, showing the custom error messages.
+
+Grading Criteria: This assignment can be graded based on the correctness of error handling, the effectiveness of custom error messages, and the thoroughness of testing. Ensure that students correctly implement error handling for division by zero and invalid input, provide meaningful error messages, and demonstrate these features through testing.
